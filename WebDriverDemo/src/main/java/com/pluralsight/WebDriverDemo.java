@@ -10,6 +10,7 @@ public class WebDriverDemo {
 	public static void main(String[] args) {
 			
 		//WebDriver driver = new FirefoxDriver();
+		//Chrome driver must match Chrome version for below to work
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
 
