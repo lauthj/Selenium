@@ -35,7 +35,7 @@ public class WebDriverDemo {
 		WebElement imageLink = imageElement.findElements(By.tagName("img")).get(0);
 		imageLink.click();
 */		
-		//fixed via below
+		//fixed runtime exceptions via below
 		WebElement imageElement = driver.findElements(By.cssSelector("a[class=rg_l]")).get(0);
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", imageElement);
