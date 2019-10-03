@@ -21,9 +21,9 @@ public class WebDriverDemo {
 		WebElement imagesLink = driver.findElements(By.linkText("Images")).get(0);
 		imagesLink.click();
 		
-	/*	WebElement imageElement = driver.findElements(By.cssSelector("a")).get(0);
+	/*	WebElement imageElement = driver.findElements(By.cssSelector("a[class=gb_B gb_sc]")).get(0);
 		WebElement imageLink = imageElement.findElements(By.tagName("img")).get(0);
 		imageLink.click();
-	*/
+    */
 	}
 }
