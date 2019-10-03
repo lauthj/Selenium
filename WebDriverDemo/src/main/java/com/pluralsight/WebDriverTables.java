@@ -9,15 +9,15 @@ public class WebDriverTables {
 
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
-		driver.get("file:///C:/dev/workspace/WebDriverDemo/src/main/webapp/TableTest.html");
+		driver.get("file:///C:/Users/Joseph.Lauth/git/Selenium/WebDriverDemo/src/main/webapp/TableTest.html");
 		
-		//WebElement outerTable = driver.findElement(By.tagName("table"));
-		//WebElement innerTable = outerTable.findElement(By.tagName("table"));
-		//WebElement row = innerTable.findElements(By.tagName("td")).get(1);
-		//System.out.println(row.getText());
+//		WebElement outerTable = driver.findElement(By.tagName("table"));
+//		WebElement innerTable = outerTable.findElement(By.tagName("table"));
+//		WebElement row = innerTable.findElements(By.tagName("td")).get(1);
+//		System.out.println(row.getText());
 		WebElement row = driver.findElement(By.xpath("/html/body/table/tbody/tr/td[2]/table/tbody/tr[2]/td"));
 		System.out.println(row.getText());
-
-	}
+		
+	} 
 
 }
