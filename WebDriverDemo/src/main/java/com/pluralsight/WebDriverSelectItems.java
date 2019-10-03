@@ -10,7 +10,7 @@ public class WebDriverSelectItems {
 
 	public static void main(String[] args) {
 		WebDriver driver = new ChromeDriver();
-		driver.get("file:///C:/dev/workspace/WebDriverDemo/src/main/webapp/SelectItemTest.html");
+		driver.get("file:///C:/Users/Joseph.Lauth/git/Selenium/WebDriverDemo/src/main/webapp/SelectItemTest.html");
 		
 		WebElement selectElement = driver.findElement(By.id("select1"));
 		Select select = new Select(selectElement);

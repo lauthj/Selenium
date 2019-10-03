@@ -16,6 +16,7 @@ public class WebDriverCheckboxes {
 		WebElement checkbox = driver.findElement(By.id("lettuceCheckbox"));
 		
 		checkbox.click();
+		checkbox.click();
 
 	}
 
