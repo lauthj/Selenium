@@ -1,25 +1,31 @@
 package com.pluralsight;
 
-import java.util.ArrayList;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class WebDriverDemo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 			
 		//WebDriver driver = new FirefoxDriver();
 		//Chrome driver must match Chrome version for below to work
-		WebDriver driver = new ChromeDriver();
+		//WebDriver driver = new ChromeDriver();
+		//driver.get("https://www.google.com/");
+		
+		 WebDriver driver = new RemoteWebDriver(
+	                new URL("http://localhost:4444/wd/hub"),
+	                DesiredCapabilities.chrome());
+		 
 		driver.get("https://www.google.com/");
-
+		 
 		WebElement searchField = driver.findElement(By.cssSelector(".gLFyf"));
 		searchField.sendKeys("pluralsight");
 		searchField.submit();
