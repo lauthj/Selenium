@@ -1,1 +1,5 @@
+com\pluralsight\WebDriverSelectItems.class
+com\pluralsight\WebDriverRadioButtons.class
+com\pluralsight\WebDriverTables.class
 com\pluralsight\WebDriverDemo.class
+com\pluralsight\WebDriverCheckboxes.class
