@@ -20,8 +20,12 @@ public class WebDriverDemo {
 		//WebDriver driver = new ChromeDriver();
 		//driver.get("https://www.google.com/");
 		
+		//Selenium remote driver - uncomment above to use withou
+		//Selenium server
+		
 		 WebDriver driver = new RemoteWebDriver(
-	                new URL("http://localhost:4444/wd/hub"),
+				    // URL is set to port 4445 for hub else should be 4444
+	                new URL("http://localhost:4445/wd/hub"),
 	                DesiredCapabilities.chrome());
 		 
 		driver.get("https://www.google.com/");
